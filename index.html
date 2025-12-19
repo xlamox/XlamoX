@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Natural Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="logo">🌿 Natural Care</div>
+
+  <div class="lang-switch">
+    <button onclick="setLang('ar')">AR</button>
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1 data-ar="العناية الطبيعية بجمالك"
+        data-fr="Le soin naturel de votre beauté"
+        data-en="Natural care for your beauty">
+    </h1>
+
+    <p data-ar="منتجات طبيعية أصلية للعناية بالبشرة، الشعر والعطور"
+       data-fr="Produits naturels pour la peau, les cheveux et les parfums"
+       data-en="Original natural products for skin, hair and perfumes">
+    </p>
+
+    <button onclick="contact()" class="cta"
+      data-ar="تواصل عبر واتساب"
+      data-fr="Commander via WhatsApp"
+      data-en="Order via WhatsApp">
+    </button>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1614850715649-1d0106293bd1" />
+  </div>
+</section>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+    <h3 data-ar="كريم بشرة طبيعي"
+        data-fr="Crème naturelle"
+        data-en="Natural Skin Cream"></h3>
+    <p data-ar="ترطيب وحماية يومية"
+       data-fr="Hydratation quotidienne"
+       data-en="Daily hydration"></p>
+    <button onclick="order('Skin Cream')">WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908">
+    <h3 data-ar="عطر رجالي"
+        data-fr="Parfum Homme"
+        data-en="Men Perfume"></h3>
+    <p data-ar="ثبات وأناقة"
+       data-fr="Élégance et tenue"
+       data-en="Elegance & long lasting"></p>
+    <button onclick="order('Men Perfume')">WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1622445275576-721325763afe">
+    <h3 data-ar="عناية بالشعر"
+        data-fr="Soin capillaire"
+        data-en="Hair Care"></h3>
+    <p data-ar="تغذية وتقوية"
+       data-fr="Nutrition et force"
+       data-en="Nutrition & strength"></p>
+    <button onclick="order('Hair Care')">WhatsApp</button>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Natural Care
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
